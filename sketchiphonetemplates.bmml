@@ -1,0 +1,12 @@
+<mockup version="1.0" skin="sketch" fontFace="Balsamiq Sans" measuredW="1451" measuredH="562" mockupW="1225" mockupH="510">
+  <controls>
+    <control controlID="0" controlTypeID="com.balsamiq.mockups::iPhone" x="226" y="52" w="-1" h="-1" measuredW="282" measuredH="510" zOrder="0" locked="false" isInGroup="-1"/>
+    <control controlID="4" controlTypeID="com.balsamiq.mockups::HRule" x="250" y="181" w="233" h="-1" measuredW="100" measuredH="10" zOrder="1" locked="false" isInGroup="-1"/>
+    <control controlID="5" controlTypeID="com.balsamiq.mockups::iPhone" x="541" y="52" w="-1" h="-1" measuredW="282" measuredH="510" zOrder="2" locked="false" isInGroup="-1"/>
+    <control controlID="6" controlTypeID="com.balsamiq.mockups::HRule" x="565" y="181" w="233" h="-1" measuredW="100" measuredH="10" zOrder="3" locked="false" isInGroup="-1"/>
+    <control controlID="7" controlTypeID="com.balsamiq.mockups::iPhone" x="856" y="52" w="-1" h="-1" measuredW="282" measuredH="510" zOrder="4" locked="false" isInGroup="-1"/>
+    <control controlID="8" controlTypeID="com.balsamiq.mockups::HRule" x="880" y="181" w="233" h="-1" measuredW="100" measuredH="10" zOrder="5" locked="false" isInGroup="-1"/>
+    <control controlID="9" controlTypeID="com.balsamiq.mockups::iPhone" x="1169" y="52" w="-1" h="-1" measuredW="282" measuredH="510" zOrder="6" locked="false" isInGroup="-1"/>
+    <control controlID="10" controlTypeID="com.balsamiq.mockups::HRule" x="1193" y="181" w="233" h="-1" measuredW="100" measuredH="10" zOrder="7" locked="false" isInGroup="-1"/>
+  </controls>
+</mockup>
