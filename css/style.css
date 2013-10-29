@@ -57,8 +57,13 @@ input {
 }
 
 .done {
-	padding:60px;
+	padding:50px;
 	text-align: center;
+	overflow: hidden;
+}
+
+#image {
+	padding-top: 30px;
 }
 
 #textalert {

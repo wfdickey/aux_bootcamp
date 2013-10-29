@@ -15,7 +15,10 @@ $(document).ready(function() {
       "elderly Japanese men",
       "vigorous jazz hands",
       "a really cool hat",
-      "laying an egg"),
+      "laying an egg",
+      "kittens and balloons",
+      "tasteful sideboob",
+      "geese"),
 
     randomNumber = prompts[Math.floor( Math.random() * prompts.length )];
     $('#promptbox').text( randomNumber );
@@ -28,7 +31,7 @@ $(document).ready(function() {
       
       // Setting for the timer 
       $('#timer').pietimer({
-         seconds: 60,
+         seconds: 1,
          color: 'rgba(52, 209, 157, 0.8)',
          height: 100,
          width: 100
