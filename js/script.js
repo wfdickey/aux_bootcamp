@@ -28,7 +28,7 @@ $(document).ready(function() {
       
       // Setting for the timer 
       $('#timer').pietimer({
-         seconds: 90,
+         seconds: 1,
          color: 'rgba(52, 209, 157, 0.8)',
          height: 100,
          width: 100
@@ -36,6 +36,7 @@ $(document).ready(function() {
 
       //Show the 'time's up notification
       function(){
+        $('#timer').remove();
          $('.done').show('slow');
       });
       
