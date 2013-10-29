@@ -37,6 +37,7 @@ $(document).ready(function() {
       //Show the 'time's up notification
       function(){
         $('#timer').remove();
+        $('#promptbox').remove();
          $('.done').show('slow');
       });
       
