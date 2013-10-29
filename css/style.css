@@ -1,0 +1,20 @@
+.wrapper {
+	margin: 0 auto;
+	width:220px;
+	height:330px;
+	background-image: url(notebook.png)	
+}
+
+#promptbox {
+	width:200px;
+	padding:10px;
+}
+
+#timer {
+	text-align: center;
+}
+
+
+#textalert {
+	color: red;
+}

@@ -1,0 +1,22 @@
+  <script type="text/javascript">
+
+      function getQuote() {
+
+         var quotes = new Array("I pity the FOOL!", 
+         "I aint gettin on no plane!", 
+         "Quit yo Jibba Jabba!", 
+         "Shut up, fool!", 
+         "Life's tough, but I'm tougher!", 
+         "Do some prep!",
+         "I'm on a real short leash here", 
+         "Don't make me mad, Arrr!", 
+         "You're gonna meet my friend, PAIN!",
+         "You aint hurt, you pathetic!");
+
+         var randomChoice = Math.floor(Math.random()* quotes.length)         
+
+         $("#myBox").html(quotes[randomChoice]);
+
+      }
+
+   </script>
