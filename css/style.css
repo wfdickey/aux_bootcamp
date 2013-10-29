@@ -1,3 +1,8 @@
+body {
+	font-family: helvetica;
+}
+
+
 .wrapper {
 	margin: 0 auto;
 	width:320px;
@@ -5,14 +10,19 @@
 	background-image: url(notebook.png)	
 }
 
+p {
+	margin: 0;
+}
+
 h1 {
+	margin:0;
+	padding-top:20px;
 	text-align: center;
 }
 
 
 form {
 	text-align: center;
-	padding-top:50px;
 }
 
 input {
@@ -20,14 +30,26 @@ input {
 	padding-top:5px;
 	padding-bottom: 5px;
 }
+	
 
-#instructions {
-	padding:20px;
+#signin {
+	padding-top:50px;
 }
 
+#instructions {
+	padding:75px 50px 10px;
+}
+
+
 #promptbox {
+	font-size: 20px;
+	text-align: center;
 	padding:50px;
 	width:200px;
+}
+
+#readybutton {
+	padding-top: 10px;
 }
 
 #timer {
