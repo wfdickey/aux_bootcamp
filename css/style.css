@@ -5,6 +5,26 @@
 	background-image: url(notebook.png)	
 }
 
+h1 {
+	text-align: center;
+}
+
+
+form {
+	text-align: center;
+	padding-top:50px;
+}
+
+input {
+	margin-bottom:5px;
+	padding-top:5px;
+	padding-bottom: 5px;
+}
+
+#instructions {
+	padding:20px;
+}
+
 #promptbox {
 	width:200px;
 	padding:10px;

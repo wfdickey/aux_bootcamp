@@ -23,7 +23,7 @@ $(document).ready(function() {
       
       // Setting for the timer 
       $('#timer').pietimer({
-         seconds: 2,
+         seconds: 90,
          color: 'rgba(52, 209, 157, 0.8)',
          height: 100,
          width: 100
