@@ -10,7 +10,12 @@ $(document).ready(function() {
       "Muhammad (Praise Be Unto Him)",
       "A cooler full of organs",
       "An icepick lobotomy",
-      "Toni Morrison's vagina"),
+      "Toni Morrison's vagina",
+      "flying sex snakes",
+      "elderly Japanese men",
+      "vigorous jazz hands",
+      "a really cool hat",
+      "laying an egg"),
 
     randomNumber = prompts[Math.floor( Math.random() * prompts.length )];
     $('#promptbox').text( randomNumber );
