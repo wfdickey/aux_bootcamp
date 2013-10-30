@@ -44,7 +44,7 @@ $(document).ready(function() {
       
       // Setting for the timer 
       $('#timer').pietimer({
-         seconds: 1,
+         seconds: 60,
          color: 'rgba(52, 209, 157, 0.8)',
          height: 100,
          width: 100
@@ -100,12 +100,13 @@ function handleFileSelect(evt) {
     //Display "Go to journal"
 
     $(function(){
-      $('#textalert').hide()
-      $('input').hide()
+      $('#textalert').remove()
+      $('input').remove()
+      $('#picture').remove();
       $('#list').show();
       $('#congrats').show();
       $('#journallink').show();
-      $('#picture').hide();
+      
     });
 
   }
