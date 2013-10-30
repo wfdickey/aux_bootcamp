@@ -10,6 +10,13 @@
 
 }
 
+html {
+	overflow:hidden;
+}
+
+body {
+	overflow:hidden;
+}
 
 .wrapper {
 	margin: 0 auto;
