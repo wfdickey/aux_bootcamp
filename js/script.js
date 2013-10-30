@@ -18,7 +18,20 @@ $(document).ready(function() {
       "laying an egg",
       "kittens and balloons",
       "tasteful sideboob",
-      "geese"),
+      "geese",
+      "shiny objects",
+      "chunks of dead prostitute",
+      "concealing a boner",
+      "authentic mexican cusine", 
+      "A Bop-it",
+      "The American Dream",
+      "A tribe of warrior women",
+      "A murder most foul",
+      "Autocannibalism",
+      "Chilren on leashes",
+      "The Kool-Aid man",
+      "A mating display"
+      ),
 
     randomNumber = prompts[Math.floor( Math.random() * prompts.length )];
     $('#promptbox').text( randomNumber );
@@ -48,6 +61,49 @@ $(document).ready(function() {
       $('.done').hide();
       $('#timer').pietimer('start');
       return false;
-   });      
-   });
+   }); 
+  });  
 });
+
+function handleFileSelect(evt) {
+    var files = evt.target.files; // FileList object
+
+    // Loop through the FileList and render image files as thumbnails.
+    for (var i = 0, f; f = files[i]; i++) {
+
+      // Only process image files.
+      if (!f.type.match('image.*')) {
+        continue;
+      }
+
+      var reader = new FileReader();
+
+      // Closure to capture the file information.
+      reader.onload = (function(theFile) {
+        return function(e) {
+          // Render thumbnail.
+          var span = document.createElement('span');
+          span.innerHTML = ['<img class="thumb" src="', e.target.result,
+                            '" title="', escape(theFile.name), '"/>'].join('');
+          document.getElementById('list').insertBefore(span, null);
+        };
+      })(f);
+
+      // Read in the image file as a data URL.
+      reader.readAsDataURL(f);
+    }
+  }
+
+  document.getElementById('image').addEventListener('change', handleFileSelect, false);
+
+
+
+
+
+
+
+
+
+
+
+
