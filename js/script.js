@@ -44,7 +44,7 @@ $(document).ready(function() {
       
       // Setting for the timer 
       $('#timer').pietimer({
-         seconds: 60,
+         seconds: 1,
          color: 'rgba(52, 209, 157, 0.8)',
          height: 175,
          width: 175
@@ -103,9 +103,12 @@ function handleFileSelect(evt) {
       $('#textalert').remove()
       $('input').remove()
       $('#picture').remove();
+      $('#cameraicon').remove();
       $('#list').show();
       $('#congrats').show();
       $('#journallink').show();
+
+
       
     });
 

@@ -14,7 +14,7 @@
 
 		<!--This is where the prompt shows up !-->
 		<div id ="congrats">
-			<h3>What a masterpiece!</h3>
+			<h3 class="header">What a masterpiece!</h3>
 		</div>
 
 
@@ -23,16 +23,19 @@
 		<div id="timer"></div>
 				
 		<div class = "done">					
-			<h2 id="textalert" >Stop!</h2>
+			<h2 class="header" id="textalert" >Stop!</h2>
 
 			<p id="picture">Take a picture!</p>
 
-			<div id="cameraicon">
+			<div> <img id="cameraicon" src = "images/camera.png">
+			</div>
+
+
 				<form method="GET">
 	              <input id="image" type="file" accept="image/*" capture="camera">
 	              <output id="list"></output>
 	            </form>
-			</div> 
+		
 		</div>	
 
 		<div id="journallink">
