@@ -16,7 +16,7 @@
 	width:320px;
 	height:470px;
 	background-image: url(ricepaper_v3.png);	
-	overflow: auto;
+	overflow: hidden;
 }
 
 p {
@@ -111,6 +111,7 @@ input {
 	text-align: center;
 	overflow: hidden;
 }
+
 
 #image {
 	margin-top: -80px;
