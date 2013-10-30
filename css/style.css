@@ -10,14 +10,6 @@
 
 }
 
-html {
-	overflow:hidden;
-}
-
-body {
-	overflow:hidden;
-}
-
 .wrapper {
 	margin: 0 auto;
 	width:320px;
@@ -127,6 +119,7 @@ input {
 	opacity:0;
 	padding-top: 30px;
 	overflow:hidden;
+	width: 90px;
 }
 
 .thumb {
