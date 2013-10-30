@@ -15,10 +15,11 @@
 	width:320px;
 	height:470px;
 	background-image: url(ricepaper_v3.png);	
-	overflow: hidden;
+
 }
 
 p {
+	font-size: 18px;
 	margin: 0;
 }
 
@@ -80,7 +81,7 @@ input {
 }
 
 #instructionsbox {
-	padding-top: 50px;
+	padding-top: 30px;
 }
 
 .instructions {
@@ -101,14 +102,40 @@ input {
 	padding-top: 10px;
 }
 
+#clickready {
+	height: 70px;
+	width:110px;
+	font-size: 20px
+}
+
 #timer {
 	text-align: center;
+}
+
+span {
+	position: absolute;
+
+	margin-top:-120px;
+	margin-left:130px;
+
+	text-align: center;
+	display:block;
+    height: 60px;
+    width: 60px;
+    line-height: 60px;
+
+    -moz-border-radius: 30px;
+    border-radius: 30px;
+
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-size: 2em;
 }
 
 .done {
 	padding:0px;
 	text-align: center;
-	overflow: hidden;
 }
 
 
@@ -118,7 +145,6 @@ input {
 	position:absolute;
 	opacity:0;
 	padding-top: 30px;
-	overflow:hidden;
 	width: 90px;
 }
 
@@ -143,10 +169,46 @@ input {
 	text-align: center;
 }
 
+#cameradiv {
+	padding-top: 20px;
+}
+
+
+
+@-webkit-keyframes pulseBorder {
+  from {
+    border:solid 1px #f00;
+  }
+  to {
+    border:solid 10px #f00;
+        
+  }
+}
+
 
 
 #cameraicon {
-	width:70px;
+
+	padding:5px;
+
+    height: 80px;
+    width: 80px;
+
+
+    -moz-border-radius: 300px;
+    border-radius: 300px;
+    border-style: solid;
+    border-color: black;
+    border-width: 3px;
+
+    -webkit-animation-name: pulseBorder;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-timing-function: ease;
+  -webkit-animation-direction: alternate;
+  -webkit-animation-duration: 1s;
+    text-align:center;
+    border: solid 1px,
+
 }
 
 #piclog {

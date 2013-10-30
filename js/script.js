@@ -62,6 +62,16 @@ $(document).ready(function() {
       $('#timer').pietimer('start');
       return false;
    }); 
+
+   var sec = 58
+  var timer = setInterval(function() { 
+   $('#hideMsg span').text(sec--);
+   if (sec == -1) {
+      $('#hideMsg').fadeOut('fast');
+      clearInterval(timer);
+   } 
+}, 1000);
+
   });  
 });
 
