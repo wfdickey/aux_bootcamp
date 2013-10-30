@@ -8,11 +8,16 @@
   <link href="css/style.css" rel='stylesheet' type='text/css'>
 
 </head>
-<body> 
+<body class = "home"> 
 
 	<div class = "wrapper" id = "promptdisplay">
 
 		<!--This is where the prompt shows up !-->
+		<div id ="congrats">
+			<h3>What a masterpiece!</h3>
+		</div>
+
+
 		<div id = "promptbox"></div>
 						
 		<div id="timer"></div>
@@ -20,7 +25,7 @@
 		<div class = "done">					
 			<h2 id="textalert" >Stop!</h2>
 
-			<p>Take a picture!</p>
+			<p id="picture">Take a picture!</p>
 
 			<div id="cameraicon">
 				<form method="GET">
@@ -28,11 +33,11 @@
 	              <output id="list"></output>
 	            </form>
 			</div> 
-		</div>
-
-		<div id ="gotojournal">
-			<a href="journal.html">Check out your Journal!</a>
 		</div>	
+
+		<div id="journallink">
+		<a href="journal.html">Check out your Journal</a>
+	</div>
 
 	</div>
 

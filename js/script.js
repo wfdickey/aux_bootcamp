@@ -3,14 +3,14 @@ $(document).ready(function() {
    //Get random quote
     var prompts = new Array(
 
-      "An elephant in the apocalypse", 
-      "A tiny pig in a tiny raincoat",
-      "A cooler full of organs",
-      "That thing that electrocutes your abs",
-      "Muhammad (Praise Be Unto Him)",
-      "A cooler full of organs",
-      "An icepick lobotomy",
-      "Toni Morrison's vagina",
+      "an elephant in the apocalypse", 
+      "a tiny pig in a tiny raincoat",
+      "a cooler full of organs",
+      "that thing that electrocutes your abs",
+      "muhammad (Praise Be Unto Him)",
+      "a cooler full of organs",
+      "an icepick lobotomy",
+      "toni Morrison's vagina",
       "flying sex snakes",
       "elderly Japanese men",
       "vigorous jazz hands",
@@ -23,14 +23,14 @@ $(document).ready(function() {
       "chunks of dead prostitute",
       "concealing a boner",
       "authentic mexican cusine", 
-      "A Bop-it",
-      "The American Dream",
-      "A tribe of warrior women",
-      "A murder most foul",
-      "Autocannibalism",
-      "Chilren on leashes",
-      "The Kool-Aid man",
-      "A mating display "
+      "a Bop-it",
+      "the American Dream",
+      "a tribe of warrior women",
+      "a murder most foul",
+      "autocannibalism",
+      "children on leashes",
+      "the Kool-Aid man",
+      "a mating display "
       ),
 
     randomNumber = prompts[Math.floor( Math.random() * prompts.length )];
@@ -100,15 +100,21 @@ function handleFileSelect(evt) {
     //Display "Go to journal"
 
     $(function(){
-      $('#gotojournal').show();
+      $('#textalert').hide()
+      $('input').hide()
+      $('#list').show();
+      $('#congrats').show();
+      $('#journallink').show();
+      $('#picture').hide();
     });
 
   }
 
+  if($("body").hasClass("home")) {
+
   document.getElementById('image').addEventListener('change', handleFileSelect, false);
 
-
-
+}
 
 
 
@@ -116,6 +122,8 @@ function handleFileSelect(evt) {
 var image = document.getElementById("list");
  
 // Take action when the image has loaded
+if ($("body").hasClass("home")) {
+
 list.addEventListener("load", function () {
     var imgCanvas = document.createElement("canvas"),
         imgContext = imgCanvas.getContext("2d");
@@ -140,7 +148,7 @@ list.addEventListener("load", function () {
 
 }, false);
 
-
+}
 
 // localStorage with image
 var storageFiles = JSON.parse(localStorage.getItem("storageFiles")) || {},
