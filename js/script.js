@@ -46,8 +46,8 @@ $(document).ready(function() {
       $('#timer').pietimer({
          seconds: 60,
          color: 'rgba(52, 209, 157, 0.8)',
-         height: 100,
-         width: 100
+         height: 175,
+         width: 175
       },
 
       //Show the 'time's up notification
