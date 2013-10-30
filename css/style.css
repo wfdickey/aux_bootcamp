@@ -115,6 +115,7 @@ input {
 	position:absolute;
 	opacity:0;
 	padding-top: 30px;
+	overflow:hidden;
 }
 
 .thumb {
