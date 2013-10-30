@@ -95,7 +95,7 @@ input {
 	font-size: 20px;
 	text-align: center;
 	padding:50px;
-	width:200px;
+	
 }
 
 #readybutton {
@@ -142,9 +142,7 @@ input {
 	text-align: center;
 }
 
-#picture {
-	width: 320px;
-}
+
 
 #cameraicon {
 	width:70px;
