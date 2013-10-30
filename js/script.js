@@ -30,7 +30,7 @@ $(document).ready(function() {
       "Autocannibalism",
       "Chilren on leashes",
       "The Kool-Aid man",
-      "A mating display"
+      "A mating display "
       ),
 
     randomNumber = prompts[Math.floor( Math.random() * prompts.length )];
@@ -65,6 +65,9 @@ $(document).ready(function() {
   });  
 });
 
+
+// Turn Image into dataURL so it can be stored in local storage 
+
 function handleFileSelect(evt) {
     var files = evt.target.files; // FileList object
 
@@ -92,9 +95,102 @@ function handleFileSelect(evt) {
       // Read in the image file as a data URL.
       reader.readAsDataURL(f);
     }
+
+
+    //Display "Go to journal"
+
+    $(function(){
+      $('#gotojournal').show();
+    });
+
   }
 
   document.getElementById('image').addEventListener('change', handleFileSelect, false);
+
+
+
+
+
+
+// Get a reference to the image element
+var image = document.getElementById("list");
+ 
+// Take action when the image has loaded
+list.addEventListener("load", function () {
+    var imgCanvas = document.createElement("canvas"),
+        imgContext = imgCanvas.getContext("2d");
+ 
+    // Make sure canvas is as big as the picture
+    imgCanvas.width = list.width;
+    imgCanvas.height = list.height;
+ 
+    // Draw image into canvas element
+    imgContext.drawImage(list, 0, 0, list.width, list.height);
+ 
+    // Get canvas contents as a data URL
+    var imgAsDataURL = imgCanvas.toDataURL("image/png");
+ 
+    // Save image into localStorage
+    try {
+        localStorage.setItem("list", imgAsDataURL);
+    }
+    catch (e) {
+        console.log("Storage failed: " + e);
+    }
+
+}, false);
+
+
+
+// localStorage with image
+var storageFiles = JSON.parse(localStorage.getItem("storageFiles")) || {},
+    list = document.getElementById("list"),
+    storageFilesDate = storageFiles.date,
+    date = new Date(),
+    todaysDate = (date.getMonth() + 1).toString() + date.getDate().toString();
+ 
+// Compare date and create localStorage if it's not existing/too old   
+if (typeof storageFilesDate === "undefined" || storageFilesDate < todaysDate) {
+    // Take action when the image has loaded
+    list.addEventListener("load", function () {
+        var imgCanvas = document.createElement("canvas"),
+            imgContext = imgCanvas.getContext("2d");
+ 
+        // Make sure canvas is as big as the picture
+        imgCanvas.width = list.width;
+        imgCanvas.height = list.height;
+ 
+        // Draw image into canvas element
+        imgContext.drawImage(list, 0, 0, list.width, list.height);
+ 
+        // Save image as a data URL
+        storageFiles.list = imgCanvas.toDataURL("image/png");
+ 
+        // Set date for localStorage
+        storageFiles.date = todaysDate;
+ 
+        // Save as JSON in localStorage
+        try {
+            localStorage.setItem("storageFiles", JSON.stringify(storageFiles));
+        }
+        catch (e) {
+            console.log("Storage failed: " + e);
+        }
+    }, false);
+ 
+    // Set initial image src    
+    list.setAttribute("src", "list.png");
+}
+else {
+    // Use image from localStorage
+    list.setAttribute("src", storageFiles.list);
+}
+
+
+
+
+
+
 
 
 

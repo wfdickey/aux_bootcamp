@@ -67,7 +67,33 @@ input {
 	padding-top: 30px;
 }
 
+.thumb {
+	max-width:200px;
+}
+
 #textalert {
 	color: red;
 }
+
+#gotojournal {
+	display: none;
+	text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
