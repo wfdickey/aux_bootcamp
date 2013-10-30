@@ -7,7 +7,6 @@ $(document).ready(function() {
       "a tiny pig in a tiny raincoat",
       "a cooler full of organs",
       "that thing that electrocutes your abs",
-      "muhammad (Praise Be Unto Him)",
       "a cooler full of organs",
       "an icepick lobotomy",
       "toni Morrison's vagina",
@@ -54,6 +53,7 @@ $(document).ready(function() {
       function(){
         $('#timer').remove();
         $('#promptbox').remove();
+        $('#drawthis').remove();
          $('.done').show('slow');
       });
       
@@ -63,7 +63,7 @@ $(document).ready(function() {
       return false;
    }); 
 
-   var sec = 58
+   var sec = 59
   var timer = setInterval(function() { 
    $('#hideMsg span').text(sec--);
    if (sec == -1) {

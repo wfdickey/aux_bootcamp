@@ -108,11 +108,16 @@ input {
 	font-size: 20px
 }
 
+#drawthis {
+	text-align: center;
+	padding-top: 10px;
+}
+
 #timer {
 	text-align: center;
 }
 
-span {
+#spantimer {
 	position: absolute;
 
 	margin-top:-120px;
@@ -140,7 +145,7 @@ span {
 
 
 #image {
-	margin-top: -70px;
+	margin-top: -75px;
 	margin-left: -40px; 
 	position:absolute;
 	opacity:0;
@@ -165,6 +170,8 @@ span {
 }
 
 #journallink {
+	font-size: 20px;
+	padding-top: 15px;
 	display: none;
 	text-align: center;
 }
