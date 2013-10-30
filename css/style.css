@@ -49,6 +49,7 @@ html {
 
 form {
 	text-align: center;
+	overflow:hidden;
 }
 
 input {
@@ -56,6 +57,7 @@ input {
 	padding-top:5px;
 	padding-bottom: 5px;
 	text-align: center;
+	overflow: hidden;
 }
 	
 .header {
