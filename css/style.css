@@ -220,7 +220,7 @@ input {
 
 #drawthis {
 	text-align: center;
-	padding-top: 60px;
+	padding-top: 40px;
 }
 
 #timer {
@@ -268,7 +268,7 @@ input {
 }
 
 #textalert {
-	padding-top: 150px;
+	padding-top: 100px;
 	color: #F04155;
 }
 
