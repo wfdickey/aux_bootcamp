@@ -1,5 +1,29 @@
 $(document).ready(function() {
 
+  $('#clickready').click(function() {
+    $(this).slideUp();
+    var seconds = 5, // Declare some variables for reuse
+        el = $('#somediv')
+    el.text(seconds) // Put it a five!
+    // Name your function so that you can call it later
+    setTimeout(function countdown() {
+        // Your countdown is already at 5, so decrement it
+        // Remember that you've already waited for 1000ms before reaching this line the first time
+        seconds--
+        el.text(seconds) // Set the new time left
+        // If the countdown is not over, recall this function after 1000ms
+        if (seconds > 0) {
+            setTimeout(countdown, 1000)
+        }
+        // If it is over, display the link
+        // Note that js will stop there and not try to call itself another time as it would with setInterval()
+        else {
+           window.location.href = 'sketch.html';
+        }
+    }, 1000);
+})
+
+
    //Get random quote
     var prompts = new Array(
 
@@ -35,6 +59,7 @@ $(document).ready(function() {
     randomNumber = prompts[Math.floor( Math.random() * prompts.length )];
     $('#promptbox').text( randomNumber );
 
+
     //TIMER
   $(function(){
 
@@ -63,7 +88,7 @@ $(document).ready(function() {
       return false;
    }); 
 
-   var sec = 58
+   var sec = 58;
   var timer = setInterval(function() { 
    $('#hideMsg span').text(sec--);
    if (sec == -1) {
@@ -206,7 +231,6 @@ else {
     // Use image from localStorage
     list.setAttribute("src", storageFiles.list);
 }
-
 
 
 

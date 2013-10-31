@@ -198,6 +198,13 @@ input {
   -webkit-box-shadow: inset 0 -2px #12ab8d;
   box-shadow: inset 0 -2px #12ab8d;
 }
+
+#somediv {
+	text-align: center;
+	font-family: 'comfortaabold';
+	font-size:  30px;
+}
+
 #clickready:active {
   top: 1px;
   outline: none;
