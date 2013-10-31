@@ -14,10 +14,20 @@
 
 		<!--This is where the prompt shows up !-->
 		<div id ="congrats">
-			<h3 class="header">What a masterpiece!</h3>
+
+				<h3 class="header">What a masterpiece!</h3>
+
+		
+				<form action="journal.html">
+
+				<input type="submit" value="My Journal" id ="journal"></input>
+
+				</form>
+			
 		</div>
 
-		<p id="drawthis"> Draw: </p>
+
+		<p id="drawthis"> Sketch </p>
 		<div id = "promptbox"> </div>
 		
 
@@ -30,7 +40,7 @@
 		</div>
 				
 		<div class = "done">					
-			<h2 class="header" id="textalert" >Stop!</h2>
+			<h2 class="header" id="textalert" >Stop Sketching!</h2>
 
 			<p id="picture">Take a picture!</p>
 
@@ -42,15 +52,9 @@
 	              <input id="image" type="file" accept="image/*" capture="camera">
 	              <output id="list"></output>
 	            </form>
-		
-		</div>	
 
-		<div id="journallink">
-		<a href="journal.html">Check out your Journal</a>
+		</div>
 	</div>
-
-	</div>
-
 <!--javascript-->
 <script src="js/jquery.js"></script>
 <script src="js/script.js"></script>

@@ -43,8 +43,8 @@ $(document).ready(function() {
       
       // Setting for the timer 
       $('#timer').pietimer({
-         seconds: 60,
-         color: 'rgba(52, 209, 157, 0.8)',
+         seconds: 1,
+         color: 'rgba(149, 207, 183, 0.8)',
          height: 175,
          width: 175
       },
@@ -63,7 +63,7 @@ $(document).ready(function() {
       return false;
    }); 
 
-   var sec = 59
+   var sec = 1
   var timer = setInterval(function() { 
    $('#hideMsg span').text(sec--);
    if (sec == -1) {
@@ -111,12 +111,11 @@ function handleFileSelect(evt) {
 
     $(function(){
       $('#textalert').remove()
-      $('input').remove()
+      $('input').show()
       $('#picture').remove();
       $('#cameraicon').remove();
       $('#list').show();
       $('#congrats').show();
-      $('#journallink').show();
 
 
       

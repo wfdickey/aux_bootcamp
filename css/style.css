@@ -10,11 +10,50 @@
 
 }
 
+@font-face {
+    font-family: 'comfortaabold';
+    src: url('font/comfortaa/comfortaa-bold-webfont.eot');
+    src: url('font/comfortaa/comfortaa-bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/comfortaa/comfortaa-bold-webfont.woff') format('woff'),
+         url('font/comfortaa/comfortaa-bold-webfont.ttf') format('truetype'),
+         url('font/comfortaa/comfortaa-bold-webfont.svg#comfortaabold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'comfortaalight';
+    src: url('font/comfortaa/comfortaa-light-webfont.eot');
+    src: url('font/comfortaa/comfortaa-light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/comfortaa/comfortaa-light-webfont.woff') format('woff'),
+         url('font/comfortaa/comfortaa-light-webfont.ttf') format('truetype'),
+         url('font/comfortaa/comfortaa-light-webfont.svg#comfortaalight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'comfortaaregular';
+    src: url('font/comfortaa/comfortaa-regular-webfont.eot');
+    src: url('font/comfortaa/comfortaa-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('font/comfortaa/comfortaa-regular-webfont.woff') format('woff'),
+         url('font/comfortaa/comfortaa-regular-webfont.ttf') format('truetype'),
+         url('font/comfortaa/comfortaa-regular-webfont.svg#comfortaaregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
 .wrapper {
 	margin: 0 auto;
 	width:320px;
 	height:470px;
-	background-image: url(ricepaper_v3.png);	
+	background-color:#FFF7BD;	
 
 }
 
@@ -24,14 +63,14 @@ p {
 }
 
 h1 {
-	font-family: 'poetsenoneregular';
+	font-family: 'comfortaabold';
 	margin:0;
 	padding-top:20px;
 	text-align: center;
 }
 
 h2 {
-	font-family: 'poetsenoneregular';
+	font-family: 'comfortaabold';
 	margin:0;
 	padding:0;
 	padding-bottom: 10px;
@@ -39,13 +78,14 @@ h2 {
 }
 
 h3 {
-	font-family: 'poetsenoneregular';
-	padding:0;
-	margin:0;
+	font-family: 'comfortaaregular';
+	text-align: center;
+	padding:5px;
+	margin: 10px;
 }
 
 html {
-	font-family: 'poetsenoneregular';
+	font-family: 'comfortaalight';
 }
 
 form {
@@ -68,23 +108,62 @@ input {
 
 
 #access {
-	padding-top:50px;
+	padding-top:20px;
 	text-align: center;
 }
 
 #login {
-	padding-bottom: 20px;
+  width: 250px;
+  height: 60px;
+  font-size: 22px;
+  color: white;
+  text-align: center;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+  background: #3498db;
+  border: 0;
+  border-bottom: 2px solid #2a8bcc;
+  cursor: pointer;
+  -webkit-box-shadow: inset 0 -2px #2a8bcc;
+  box-shadow: inset 0 -2px #2a8bcc;
+}
+#login:active {
+  top: 1px;
+  outline: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
 }
 
-#signin {
-	padding-top:0px;
+#signup {
+  width: 250px;
+  height: 60px;
+  font-size: 22px;
+  color: white;
+  text-align: center;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+  background: #1abc9c;
+  border: 0;
+  border-bottom: 2px solid #12ab8d;
+  cursor: pointer;
+  -webkit-box-shadow: inset 0 -2px #12ab8d;
+  box-shadow: inset 0 -2px #12ab8d;
+}
+#signup:active {
+  top: 1px;
+  outline: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+#toppadding {
+	padding-top: 10px;
 }
 
 #instructionsbox {
-	padding-top: 30px;
+	text-align: center;
+	padding-top: 10px;
 }
 
-.instructions {
+.label {
 	padding-left: 20px;
 	padding-right: 20px;
 	padding-bottom: 10px;
@@ -92,25 +171,44 @@ input {
 
 
 #promptbox {
-	font-size: 20px;
+	font-size: 28px;
 	text-align: center;
-	padding:50px;
+	padding-bottom:30px;
+	padding-left:30px;
+	padding-right:30px;
 	
 }
 
-#readybutton {
-	padding-top: 10px;
+.bottombutton{
+	padding-top: 5px;
+	text-align: center;
 }
 
 #clickready {
-	height: 70px;
-	width:110px;
-	font-size: 20px
+  width: 250px;
+  height: 60px;
+  font-size: 22px;
+  color: white;
+  text-align: center;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+  background: #1abc9c;
+  border: 0;
+  border-bottom: 2px solid #12ab8d;
+  cursor: pointer;
+  -webkit-box-shadow: inset 0 -2px #12ab8d;
+  box-shadow: inset 0 -2px #12ab8d;
 }
+#clickready:active {
+  top: 1px;
+  outline: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+	
 
 #drawthis {
 	text-align: center;
-	padding-top: 10px;
+	padding-top: 100px;
 }
 
 #timer {
@@ -154,12 +252,12 @@ input {
 }
 
 .thumb {
-	max-width:250px;
+	max-width:220px;
 }
 
 #textalert {
 	padding-top: 150px;
-	color: red;
+	color: #F04155;
 }
 
 #congrats {
@@ -169,11 +267,27 @@ input {
 	text-align: center;
 }
 
-#journallink {
-	font-size: 20px;
-	padding-top: 15px;
-	display: none;
-	text-align: center;
+#journal {
+  width: 250px;
+  height: 60px;
+  font-size: 22px;
+  color: white;
+  text-align: center;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+  background: #1abc9c;
+  border: 0;
+  border-bottom: 2px solid #12ab8d;
+  cursor: pointer;
+  -webkit-box-shadow: inset 0 -2px #12ab8d;
+  box-shadow: inset 0 -2px #12ab8d;
+}
+
+
+#journal:active {
+  top: 1px;
+  outline: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
 }
 
 #cameradiv {
@@ -184,10 +298,10 @@ input {
 
 @-webkit-keyframes pulseBorder {
   from {
-    border:solid 1px #f00;
+    border:solid 6px #F04155;
   }
   to {
-    border:solid 10px #f00;
+    border:solid 10px #F04155;
         
   }
 }
@@ -197,7 +311,6 @@ input {
 #cameraicon {
 
 	padding:5px;
-
     height: 80px;
     width: 80px;
 
@@ -205,7 +318,7 @@ input {
     -moz-border-radius: 300px;
     border-radius: 300px;
     border-style: solid;
-    border-color: black;
+    border-color: blue;
     border-width: 3px;
 
     -webkit-animation-name: pulseBorder;
@@ -214,7 +327,8 @@ input {
   -webkit-animation-direction: alternate;
   -webkit-animation-duration: 1s;
     text-align:center;
-    border: solid 1px,
+    border: solid 1px;
+    cursor: pointer;
 
 }
 
