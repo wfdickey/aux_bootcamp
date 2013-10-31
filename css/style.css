@@ -70,6 +70,7 @@ h1 {
 }
 
 h2 {
+	text-align: center;
 	font-family: 'comfortaabold';
 	margin:0;
 	padding:0;
@@ -344,6 +345,11 @@ input {
 
 }
 
+.caption {
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
 #piclog {
 	text-align: center;
 }
@@ -353,7 +359,20 @@ input {
 	padding-bottom: 5px;
 }
 
-
+#sketchagain {
+  width: 250px;
+  height: 60px;
+  font-size: 22px;
+  color: white;
+  text-align: center;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
+  background: #1abc9c;
+  border: 0;
+  border-bottom: 2px solid #12ab8d;
+  cursor: pointer;
+  -webkit-box-shadow: inset 0 -2px #12ab8d;
+  box-shadow: inset 0 -2px #12ab8d;
+}
 
 
 
