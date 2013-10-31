@@ -1,12 +1,19 @@
 $(document).ready(function() {
 
+  $('#getready').hide();
+
+
   $('#clickready').click(function() {
-    $(this).slideUp();
+    $('#instructionsbox').slideUp();
+    $('#clickready').slideUp();
+    $('.header').slideUp();
+    $('#getready').show('slow');
     var seconds = 5, // Declare some variables for reuse
         el = $('#somediv')
     el.text(seconds) // Put it a five!
     // Name your function so that you can call it later
     setTimeout(function countdown() {
+
         // Your countdown is already at 5, so decrement it
         // Remember that you've already waited for 1000ms before reaching this line the first time
         seconds--
@@ -133,6 +140,7 @@ function handleFileSelect(evt) {
 
 
     //Display "Go to journal"
+
 
     $(function(){
       $('#textalert').remove()

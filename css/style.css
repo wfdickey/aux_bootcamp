@@ -184,6 +184,11 @@ input {
 	text-align: center;
 }
 
+#getready {
+	padding-top: 150px;
+	text-align: center;
+}
+
 #clickready {
   width: 250px;
   height: 60px;
@@ -202,7 +207,7 @@ input {
 #somediv {
 	text-align: center;
 	font-family: 'comfortaabold';
-	font-size:  30px;
+	font-size:  70px;
 }
 
 #clickready:active {
