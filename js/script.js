@@ -83,8 +83,7 @@ $(document).ready(function() {
       "a tiny horse",
       "a monkey smoking a cigar",
       "nipple blades",
-      "the devil himself",
-
+      "the devil himself"
       ),
 
     randomNumber = prompts[Math.floor( Math.random() * prompts.length )];
