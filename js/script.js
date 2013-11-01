@@ -100,7 +100,7 @@ $(document).ready(function() {
       
       // Setting for the timer 
       $('#timer').pietimer({
-         seconds: 1,
+         seconds: 60,
          color: 'rgba(149, 207, 183, 0.8)',
          height: 175,
          width: 175
@@ -123,7 +123,7 @@ $(document).ready(function() {
       return false;
    }); 
 
-   var sec = 1;
+   var sec = 58;
   var timer = setInterval(function() { 
    $('#hideMsg span').text(sec--);
    if (sec == -1) {
