@@ -66,6 +66,10 @@
 
 }
 
+.icon {
+  width: 75px;
+}
+
 
 p {
 	font-size: 18px;
@@ -117,6 +121,9 @@ input {
 	padding-top: 30px;
 }
 
+#whatyouneed {
+  padding-top: 5px;
+}
 
 #access {
 	padding-top:20px;
@@ -353,6 +360,8 @@ input {
     text-align:center;
     border: solid 1px;
     cursor: pointer;
+
+    box-sizing:border-box;
 
 
 }
