@@ -136,6 +136,7 @@ $(document).ready(function() {
 });
 
 $('#spantimer').click(function() {
+        $(this).fadeTo("fast",0)
         $('#journal').hide();
         $('#timer').remove();
         $('#promptbox').remove();
