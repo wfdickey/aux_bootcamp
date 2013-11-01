@@ -95,10 +95,12 @@ $(document).ready(function() {
 
       //Hide the 'time's up' notification 
       $('.done').hide();
+      $('#sketchagain').hide();
+
       
       // Setting for the timer 
       $('#timer').pietimer({
-         seconds: 60,
+         seconds: 1,
          color: 'rgba(149, 207, 183, 0.8)',
          height: 175,
          width: 175
@@ -106,6 +108,7 @@ $(document).ready(function() {
 
       //Show the 'time's up notification
       function(){
+        $('#journal').hide();
         $('#timer').remove();
         $('#promptbox').remove();
         $('#drawthis').remove();
@@ -113,12 +116,13 @@ $(document).ready(function() {
       });
       
    $(function(){
+
       $('.done').hide();
       $('#timer').pietimer('start');
       return false;
    }); 
 
-   var sec = 58;
+   var sec = 1;
   var timer = setInterval(function() { 
    $('#hideMsg span').text(sec--);
    if (sec == -1) {
@@ -162,16 +166,16 @@ function handleFileSelect(evt) {
     }
 
 
-    //Display "Go to journal"
-
-
     $(function(){
+
       $('#textalert').remove();
       $('input').show();
       $('#picture').remove();
       $('#cameraicon').remove();
       $('#list').show();
       $('#congrats').show();
+      $('#journal').append();
+
 
 
       
@@ -224,6 +228,8 @@ $('#getready').hide();
 
 
   $('#sketchagain').click(function() {
+    $('#list').slideUp();
+    $('#journal').slideUp();
     $('#piclog').slideUp();
     $('#sketchagain').slideUp();
     $('.header').slideUp();
