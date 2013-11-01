@@ -9,18 +9,18 @@ $(document).ready(function() {
     $('.header').slideUp();
     $('#getready').show('slow');
     var seconds = 5, // Declare some variables for reuse
-        el = $('#somediv')
-    el.text(seconds) // Put it a five!
+        el = $('#somediv');
+    el.text(seconds); // Put it a five!
     // Name your function so that you can call it later
     setTimeout(function countdown() {
 
         // Your countdown is already at 5, so decrement it
         // Remember that you've already waited for 1000ms before reaching this line the first time
-        seconds--
-        el.text(seconds) // Set the new time left
+        seconds--;
+        el.text(seconds); // Set the new time left
         // If the countdown is not over, recall this function after 1000ms
         if (seconds > 0) {
-            setTimeout(countdown, 1000)
+            setTimeout(countdown, 1000);
         }
         // If it is over, display the link
         // Note that js will stop there and not try to call itself another time as it would with setInterval()
@@ -28,7 +28,7 @@ $(document).ready(function() {
            window.location.href = 'sketch.html';
         }
     }, 1000);
-})
+});
 
 
    //Get random quote
@@ -98,7 +98,7 @@ $(document).ready(function() {
       
       // Setting for the timer 
       $('#timer').pietimer({
-         seconds: 60,
+         seconds: 1,
          color: 'rgba(149, 207, 183, 0.8)',
          height: 175,
          width: 175
@@ -118,7 +118,7 @@ $(document).ready(function() {
       return false;
    }); 
 
-   var sec = 58;
+   var sec = 1;
   var timer = setInterval(function() { 
    $('#hideMsg span').text(sec--);
    if (sec == -1) {
@@ -166,8 +166,8 @@ function handleFileSelect(evt) {
 
 
     $(function(){
-      $('#textalert').remove()
-      $('input').show()
+      $('#textalert').remove();
+      $('input').show();
       $('#picture').remove();
       $('#cameraicon').remove();
       $('#list').show();
@@ -219,6 +219,36 @@ list.addEventListener("load", function () {
 
 }
 
+$('#getready').hide();
+
+
+  $('#sketchagain').click(function() {
+    $('#piclog').slideUp();
+    $('#sketchagain').slideUp();
+    $('.header').slideUp();
+    $('#wantmore').slideUp();
+    $('#getready').show('slow');
+    var seconds = 10, // Declare some variables for reuse
+        el = $('#somediv');
+    el.text(seconds); // Put it a five!
+    // Name your function so that you can call it later
+    setTimeout(function countdown() {
+
+        // Your countdown is already at 5, so decrement it
+        // Remember that you've already waited for 1000ms before reaching this line the first time
+        seconds--;
+        el.text(seconds); // Set the new time left
+        // If the countdown is not over, recall this function after 1000ms
+        if (seconds > 0) {
+            setTimeout(countdown, 1000);
+        }
+        // If it is over, display the link
+        // Note that js will stop there and not try to call itself another time as it would with setInterval()
+        else {
+           window.location.href = 'sketch.html';
+        }
+    }, 1000);
+
 // localStorage with image
 var storageFiles = JSON.parse(localStorage.getItem("storageFiles")) || {},
     list = document.getElementById("list"),
@@ -263,19 +293,4 @@ else {
     list.setAttribute("src", storageFiles.list);
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+});
