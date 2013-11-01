@@ -100,7 +100,7 @@ $(document).ready(function() {
       
       // Setting for the timer 
       $('#timer').pietimer({
-         seconds: 60,
+         seconds: 1,
          color: 'rgba(149, 207, 183, 0.8)',
          height: 175,
          width: 175
@@ -108,6 +108,7 @@ $(document).ready(function() {
 
       //Show the 'time's up notification
       function(){
+        $('#doneearly').hide();
         $('#journal').hide();
         $('#timer').remove();
         $('#promptbox').remove();
@@ -122,7 +123,7 @@ $(document).ready(function() {
       return false;
    }); 
 
-   var sec = 58;
+   var sec = 1;
   var timer = setInterval(function() { 
    $('#hideMsg span').text(sec--);
    if (sec == -1) {
@@ -139,8 +140,10 @@ $('#spantimer').click(function() {
         $('#timer').remove();
         $('#promptbox').remove();
         $('#drawthis').remove();
-        $('#doneearly').remove();
+        $('#promptbox').remove();
         $('.done').show('slow');
+        $('#doneearly').hide();
+
     
 });
 
@@ -267,6 +270,9 @@ $('#getready').hide();
         }
     }, 1000);
 
+
+
+
 // localStorage with image
 var storageFiles = JSON.parse(localStorage.getItem("storageFiles")) || {},
     list = document.getElementById("list"),
@@ -311,4 +317,7 @@ else {
     list.setAttribute("src", storageFiles.list);
 }
 
+
 });
+
+
